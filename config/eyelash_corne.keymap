@@ -92,7 +92,7 @@
             display-name = "SYMBOL";
             bindings = <
 &kp GRAVE         &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
-&mt LCTRL DELETE  &trans    &trans  &trans    &trans    &trans               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans     &kp EQUAL  &kp EQUAL     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH
+&mt LCTRL DELETE  &trans    &trans  &trans    &trans    &trans               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans     &kp MINUS  &kp EQUAL     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH
 &kp LEFT_SHIFT    &trans    &trans  &trans    &trans    &trans     &trans                    &mmv MOVE_DOWN                   &trans     &kp UNDER  &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
                                     &trans    &trans    &trans                                                                &kp RET    &trans     &trans
             >;
