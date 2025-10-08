@@ -79,7 +79,7 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&kp GRAVE       &kp N7        &kp N8        &kp N9        &trans      &trans                                   &mmv MOVE_UP                     &kp HOME  &kp END   &kp UP    &trans     &kp PG_UP  &kp BACKSPACE
+&kp TILDE       &kp N7        &kp N8        &kp N9        &trans      &trans                                   &mmv MOVE_UP                     &kp HOME  &kp END   &kp UP    &kp DEL    &kp PG_UP  &kp BACKSPACE
 &mt LCTRL TAB   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans      &trans                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans    &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
 &kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans      &trans     &kp C_MUTE                    &mmv MOVE_DOWN                   &trans    &trans    &trans    &trans     &trans     &kp INS
                                             &kp NUMBER_0  &kp PERIOD  &kp COMMA                                                                 &trans    &trans    &trans
@@ -91,10 +91,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp GRAVE       &kp EXCL   &kp AT         &kp HASH      &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp BSPC
-&mt LCTRL TAB   &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS  &kp EQUAL            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &kp BACKSLASH
-&kp LEFT_SHIFT  &trans     &trans         &trans        &trans     &trans     &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &kp PIPE
-                                          &trans        &trans     &trans                                                                &kp RET    &trans     &trans
+&kp GRAVE         &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
+&mt LCTRL DELETE  &trans    &trans  &trans    &trans    &trans               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans     &kp EQUAL  &kp EQUAL     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH
+&kp LEFT_SHIFT    &trans    &trans  &trans    &trans    &trans     &trans                    &mmv MOVE_DOWN                   &trans     &kp UNDER  &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
+                                    &trans    &trans    &trans                                                                &kp RET    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
