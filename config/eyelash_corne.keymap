@@ -107,7 +107,7 @@
 
         KEY_PLUS {
             bindings = <&kp PLUS>;
-            key-positions = <4 8>;
+            key-positions = <23 17>;
         };
     };
 
