@@ -55,8 +55,8 @@
     combos {
         compatible = "zmk,combos";
 
-        DELETEC {
-            bindings = <&kp DEL>;
+        BACKSPACEC {
+            bindings = <&kp BACKSPACE>;
             key-positions = <11 10>;
         };
 
