@@ -67,10 +67,10 @@
         base_layer {
             display-name = "base";
             bindings = <
-&kp ESC        &kp Q             &kp W              &kp E                   &kp R                 &kp T                                      &kp UP                &kp Y        &kp U                  &kp I                    &kp O              &kp P                          &kp BSPC
-&mt LCTRL TAB  &home_row LGUI A  &home_row LCTRL S  &home_row LEFT_SHIFT D  &home_row LEFT_ALT F  &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &home_row RIGHT_ALT J  &home_row RIGHT_SHIFT K  &home_row RCTRL L  &home_row RIGHT_GUI SEMICOLON  &mt RCTRL SINGLE_QUOTE
-&kp LSHFT      &kp Z             &kp X              &kp C                   &kp V                 &kp B               &kp SPACE              &kp DOWN              &kp N        &kp M                  &kp COMMA                &kp DOT            &kp SLASH                      &kp DELETE
-                                                    &kp LGUI                &mo 2                 &mt LEFT_ALT SPACE                                               &lt 3 ENTER  &mo 1                  &kp SLASH
+&kp ESCAPE     &kp Q  &kp W              &kp E                   &kp R                 &kp T                               &kp UP                &kp Y        &kp U                  &kp I                    &kp O              &kp P          &kp BSPC
+&mt LCTRL TAB  &kp A  &home_row LCTRL S  &home_row LEFT_SHIFT D  &home_row LEFT_ALT F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &home_row RIGHT_ALT J  &home_row RIGHT_SHIFT K  &home_row RCTRL L  &kp SEMICOLON  &mt RCTRL SINGLE_QUOTE
+&kp LSHFT      &kp Z  &kp X              &kp C                   &kp V                 &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M                  &kp COMMA                &kp DOT            &none          &kp PIPE
+                                         &kp LGUI                &mo 2                 &lt 4 SPACE                                               &lt 3 ENTER  &mo 1                  &kp SLASH
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -79,9 +79,9 @@
         number_layer {
             display-name = "number";
             bindings = <
-&kp TILDE       &kp N7        &kp N8        &kp N9        &kp PG_DN     &kp PG_UP                                   &mmv MOVE_UP                     &kp HOME            &kp END   &kp UP    &kp DEL    &trans           &kp BACKSPACE
-&mt LCTRL TAB   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp C_VOL_DN  &kp C_VOL_UP                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp K_CONTEXT_MENU  &kp LEFT  &kp DOWN  &kp RIGHT  &kp INS          &kp C_MUTE
-&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans              &trans    &trans    &trans     &kp PRINTSCREEN  &trans
+&kp TILDE       &kp N7        &kp N8        &kp N9        &kp PG_DN     &kp PG_UP                                   &mmv MOVE_UP                     &kp HOME            &kp END   &kp UP    &kp DEL    &trans  &kp BACKSPACE
+&mt LCTRL TAB   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp C_VOL_DN  &kp C_VOL_UP                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp K_CONTEXT_MENU  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans              &trans    &trans    &trans     &trans  &trans
                                             &kp NUMBER_0  &kp PERIOD    &kp COMMA                                                                    &trans              &trans    &trans
             >;
 
@@ -107,6 +107,16 @@
 &trans           &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &trans      &trans      &trans                &trans  &trans  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &trans
 &sys_reset       &bootloader      &bt BT_CLR_ALL   &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans            &trans          &trans          &trans          &mkp MCLK       &trans           &bootloader  &sys_reset
                                                    &trans      &trans      &trans                                        &trans          &trans          &trans
+            >;
+        };
+
+        wm {
+            display-name = "wm";
+            bindings = <
+&kp LG(LC(Q))  &kp LG(LC(Q))  &kp LG(LC(W))  &kp LG(LC(E))  &kp LG(LC(R))  &kp LG(LC(T))                    &trans          &kp PRINTSCREEN  &trans            &kp LG(LS(UP_ARROW))    &trans                   &kp LG(LC(P))  &kp LG(LC(BACKSPACE))
+&trans         &trans         &kp LG(LC(S))  &kp LG(LC(D))  &trans         &trans                   &trans  &trans  &trans  &kp LG(F11)      &kp LG(LS(LEFT))  &kp LG(LS(DOWN_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans         &trans
+&trans         &trans         &kp LG(LC(X))  &trans         &trans         &trans         &trans            &trans          &trans           &kp LG(LC(M))     &trans                  &trans                   &trans         &trans
+                                             &trans         &trans         &trans                                           &trans           &trans            &trans
             >;
         };
     };
