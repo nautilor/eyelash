@@ -197,37 +197,37 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   wm:
-  - Gui+Ctl+Q
-  - Gui+Ctl+Q
-  - Gui+Ctl+W
-  - Gui+Ctl+E
-  - Gui+Ctl+R
-  - Gui+Ctl+T
+  - Gui+Ctl+X
+  - Gui+Q
+  - Gui+W
+  - Gui+E
+  - Gui+R
+  - Gui+T
   - {t: '$$mdi:transfer$$', type: trans}
-  - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+Sft+$$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+Ctl+P
+  - Gui+$$mdi:arrow-up-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Sft+P
   - {t: 'Gui+Ctl+$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Ctl+Q
+  - {t: Gui+Ctl+W, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: Gui+Ctl+E, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: Gui+Ctl+R, h: '$$mdi:apple-keyboard-option$$'}
+  - Gui+Ctl+T
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+Ctl+S
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Gui+Ctl+D
+  - Gui+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:arrow-down-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
+  - Gui+Sft+M
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+F11
-  - Gui+Sft+$$mdi:arrow-left-bold$$
-  - Gui+Sft+$$mdi:arrow-down-bold$$
-  - Gui+Sft+$$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+Ctl+X
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
