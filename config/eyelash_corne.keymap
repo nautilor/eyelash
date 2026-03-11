@@ -113,10 +113,10 @@
         wm {
             display-name = "wm";
             bindings = <
-&kp LG(LC(Q))  &kp LG(LC(Q))  &kp LG(LC(W))  &kp LG(LC(E))  &kp LG(LC(R))  &kp LG(LC(T))                    &trans          &kp PRINTSCREEN  &trans            &kp LG(LS(UP_ARROW))    &trans                   &kp LG(LC(P))  &kp LG(LC(BACKSPACE))
-&trans         &trans         &kp LG(LC(S))  &kp LG(LC(D))  &trans         &trans                   &trans  &trans  &trans  &kp LG(F11)      &kp LG(LS(LEFT))  &kp LG(LS(DOWN_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans         &trans
-&trans         &trans         &kp LG(LC(X))  &trans         &trans         &trans         &trans            &trans          &trans           &kp LG(LC(M))     &trans                  &trans                   &trans         &trans
-                                             &trans         &trans         &trans                                           &trans           &trans            &trans
+&kp LG(LC(X))  &kp LG(Q)      &kp LG(W)            &kp LG(E)                 &kp LG(R)           &kp LG(T)                        &trans          &trans         &trans         &kp LG(UP_ARROW)    &trans               &kp LG(LS(P))  &kp LG(LC(BACKSPACE))
+&trans         &kp LG(LC(Q))  &mt LCTRL LG(LC(W))  &mt LEFT_SHIFT LG(LC(E))  &mt LALT LG(LC(R))  &kp LG(LC(T))            &trans  &trans  &trans  &kp LG(LC(D))  &kp LG(LEFT)   &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(LS(M))  &trans
+&trans         &trans         &trans               &trans                    &trans              &trans         &trans            &trans          &trans         &kp LG(LC(M))  &trans              &trans               &trans         &trans
+                                                   &trans                    &trans              &trans                                           &trans         &trans         &trans
             >;
         };
     };
