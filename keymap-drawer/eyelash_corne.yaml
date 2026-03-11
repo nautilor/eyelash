@@ -45,8 +45,8 @@ layers:
   - '|'
   - LGUI
   - symbol
-  - {t: '$$mdi:keyboard-space$$', h: wm}
-  - {t: '$$mdi:keyboard-return$$', h: extra}
+  - {t: '$$mdi:keyboard-space$$', h: extra}
+  - {t: '$$mdi:keyboard-return$$', h: wm}
   - number
   - {t: /, s: '?'}
   number:
@@ -192,8 +192,8 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   wm:
@@ -241,8 +241,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
