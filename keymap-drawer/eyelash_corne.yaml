@@ -47,7 +47,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: LGUI}
   - {t: '$$mdi:keyboard-space$$', h: symbol}
   - {t: '$$mdi:keyboard-return$$', h: extra}
-  - {t: '$$mdi:keyboard-tab$$', h: number}
+  - {t: '$$mdi:backspace$$', h: number}
   - {t: '$$mdi:transfer$$', type: trans}
   number:
   - {t: '`', s: '~'}
@@ -205,3 +205,5 @@ combos:
   k: $$mdi:apple-keyboard-shift$$
 - p: [40, 39]
   k: $$mdi:apple-keyboard-shift$$
+- p: [11, 10]
+  k: {t: '$$mdi:backspace$$', type: backspace}
