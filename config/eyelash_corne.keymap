@@ -55,9 +55,24 @@
     combos {
         compatible = "zmk,combos";
 
-        CAPS_WORD {
-            bindings = <&caps_word>;
-            key-positions = <17 23>;
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
+        };
+
+        lshift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <29 30>;
+        };
+
+        rshift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <40 39>;
         };
     };
 
@@ -67,10 +82,10 @@
         base_layer {
             display-name = "base";
             bindings = <
-&kp ESCAPE     &kp Q  &kp W              &kp E                   &kp R                 &kp T                               &kp UP                &kp Y        &kp U                  &kp I                    &kp O              &kp P          &kp BSPC
-&mt LCTRL TAB  &kp A  &home_row LCTRL S  &home_row LEFT_SHIFT D  &home_row LEFT_ALT F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &home_row RIGHT_ALT J  &home_row RIGHT_SHIFT K  &home_row RCTRL L  &kp SEMICOLON  &mt RCTRL SINGLE_QUOTE
-&kp LSHFT      &kp Z  &kp X              &kp C                   &kp V                 &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M                  &kp COMMA                &kp DOT            &kp SLASH      &kp BACKSLASH
-                                         &kp LGUI                &mo 2                 &lt 3 SPACE                                               &lt 4 ENTER  &mo 1                  &kp SLASH
+&trans  &kp Q  &kp W              &kp E                   &kp R                 &kp T                                 &kp UP                &kp Y             &kp U                  &kp I                    &kp O              &kp P          &trans
+&trans  &kp A  &home_row LCTRL S  &home_row LEFT_SHIFT D  &home_row LEFT_ALT F  &home_row LGUI G            &kp LEFT  &kp ENTER  &kp RIGHT  &home_row RGUI G  &home_row RIGHT_ALT J  &home_row RIGHT_SHIFT K  &home_row RCTRL L  &kp SEMICOLON  &trans
+&trans  &kp Z  &kp X              &kp C                   &kp V                 &kp B             &trans              &kp DOWN              &kp N             &kp M                  &kp COMMA                &kp DOT            &kp SLASH      &trans
+                                  &trans                  &home_row LGUI TAB    &lt 2 SPACE                                                 &lt 3 ENTER       &lt 1 ESCAPE           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -107,16 +122,6 @@
 &trans           &kp C_VOL_DN     &kp C_VOL_UP     &kp C_MUTE     &trans       &trans                &trans  &trans  &trans  &trans          &trans       &trans      &trans  &trans  &trans
 &trans           &kp C_BRI_DN     &kp C_BRI_UP     &kp LC(LG(S))  &bootloader  &sys_reset  &trans            &trans          &sys_reset      &bootloader  &trans      &trans  &trans  &trans
                                                    &trans         &trans       &trans                                        &trans          &trans       &trans
-            >;
-        };
-
-        wm {
-            display-name = "wm";
-            bindings = <
-&kp LG(LC(X))  &kp LG(Q)      &kp LG(W)            &kp LG(E)                 &kp LG(R)           &kp LG(T)                        &trans          &trans         &trans         &kp LG(UP_ARROW)    &trans               &kp LG(LS(P))  &kp LG(LC(BACKSPACE))
-&trans         &kp LG(LC(Q))  &mt LCTRL LG(LC(W))  &mt LEFT_SHIFT LG(LC(E))  &mt LALT LG(LC(R))  &kp LG(LC(T))            &trans  &trans  &trans  &kp LG(LC(D))  &kp LG(LEFT)   &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(LS(M))  &trans
-&trans         &trans         &trans               &trans                    &trans              &trans         &trans            &trans          &trans         &kp LG(LC(M))  &trans              &trans               &trans         &trans
-                                                   &trans                    &trans              &trans                                           &trans         &trans         &trans
             >;
         };
     };
