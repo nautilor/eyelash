@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-tab$$', h: LGUI}
+  - {t: '$$mdi:keyboard-esc$$', h: LGUI}
   - {t: '$$mdi:keyboard-space$$', h: symbol}
   - {t: '$$mdi:keyboard-return$$', h: extra}
-  - {t: '$$mdi:keyboard-esc$$', h: number}
+  - {t: '$$mdi:keyboard-tab$$', h: number}
   - {t: '$$mdi:transfer$$', type: trans}
   number:
   - {t: '`', s: '~'}
